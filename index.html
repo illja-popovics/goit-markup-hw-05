@@ -479,16 +479,25 @@
         <div class="form-wrapper">
           <form class="subscribe-form">
             <label class="subscribe-input-label" for="subscribe-email">
-              <span>Subscribe</span>
+              Subscribe
+            </label>
+            <div class="input-button-wrapper">
               <input
                 class="subscribe-email-input"
                 type="email"
                 name="subscribe_email"
                 id="subscribe-email"
                 placeholder="E-Mail"
+                required
+                autocomplete="email"
               />
-            </label>
-            <button class="subscribe-button" type="submit">Subscribe</button>
+              <button class="subscribe-button" type="submit">
+                Subscribe
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -516,6 +525,9 @@
                 type="text"
                 name="application_name"
                 id="form-name"
+                autofocus
+                autocomplete="name"
+                required
               />
               <svg class="modal-input-icon" width="18px" heigth="18px">
                 <use href="./images/icons.svg#icon-username"></use>
@@ -532,6 +544,8 @@
                 type="number"
                 name="application_number"
                 id="form-phone"
+                autocomplete="tel"
+                required
               />
               <svg class="modal-input-icon" width="18px" heigth="18px">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -548,6 +562,8 @@
                 type="email"
                 name="application_email"
                 id="form-email"
+                autocomplete="email"
+                required
               />
               <svg class="modal-input-icon" width="18px" heigth="18px">
                 <use href="./images/icons.svg#icon-mail"></use>
@@ -560,6 +576,8 @@
               class="modal-form-comment"
               name="application_message"
               placeholder="Text input"
+              required
+              minlength="10"
             ></textarea>
           </label>
           <label class="policy-checkbox-wrapper">

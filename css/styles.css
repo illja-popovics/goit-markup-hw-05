@@ -104,7 +104,6 @@ a:focus {
 .hero-button {
     background-color: var(--logo-button-purple-cl);
     font-weight: 500;
-    border: none;
     letter-spacing: 0.04em;
     color: #fff;
     font-family: Roboto, sans-serif;;
@@ -112,6 +111,8 @@ a:focus {
     width: 169px;
     border-radius: 4px;
     padding: 16px 32px;
+    
+    border: none;
     white-space: nowrap;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition: var(--transition);
@@ -473,6 +474,88 @@ a:focus {
     background-color: #31d0aa;
 }
 
+.form-wrapper {}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.subscribe-input-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.subscribe-email-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    outline: none;
+    background: transparent;
+    padding: 8px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.subscribe-email-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.input-button-wrapper {
+    display: flex;
+    gap: 24px;
+
+}
+
+.subscribe-button {
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #fff;
+    white-space: nowrap;
+    
+    transition: var(--transition);
+    transition-property: background-color;
+
+}
+
+.subscribe-icon {
+    position: absolute;
+    top: 8px;
+    right: 24px;
+}
+
+.subscribe-button:hover {
+    background-color: var(--button-link-active-cl);
+}
+
+.subscribe-button:focus {
+    background-color: var(--button-link-active-cl);
+}
 
 /* #endregion */
 
@@ -707,8 +790,6 @@ a:focus {
     margin-top: 16px;
 }
 
-.form-element-wrapper {
-}
 
 .modal-form-label {
     display: block;
