@@ -474,7 +474,7 @@ a:focus {
     background-color: #31d0aa;
 }
 
-.form-wrapper {}
+.form-wrapper {margin-left: -40px;}
 
 .subscribe-form {
     display: flex;
