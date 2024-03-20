@@ -705,6 +705,7 @@ a:focus {
     background: #fcfcfc;
     transition: 300ms ease-in;
     transition-property: opacity, transform;
+    padding: 72px 24px 24px 24px;
 }
 
 .modal-button {
@@ -770,7 +771,6 @@ a:focus {
 /* #region Modal form */
 
 .modal-form-title {
-    margin-top: 72px;
 
     font-weight: 500;
     font-size: 16px;
@@ -784,9 +784,6 @@ a:focus {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 24px;
     margin-top: 16px;
 }
 
